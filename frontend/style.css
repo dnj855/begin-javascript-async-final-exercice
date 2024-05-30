@@ -121,6 +121,7 @@ input[type="password"] {
   font-weight: 500;
   border-radius: 8px;
   border: 1px solid transparent;
+  margin: 0.5em 0;
   padding: 0.6em 1.2em;
   color: var(--primary-text-color);
   background-color: var(--button-bg-color);
@@ -148,7 +149,12 @@ input[type="password"]:focus {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
   z-index: 10000;
   min-width: 300px;
+  width: 50%;
   border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .close-button {
@@ -160,6 +166,7 @@ input[type="password"]:focus {
   position: absolute;
   top: 10px;
   right: 10px;
+  cursor: pointer;
 }
 
 .dialog-content {
@@ -167,6 +174,7 @@ input[type="password"]:focus {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  padding: 16px;
 }
 
 .dialog-content > form {

@@ -13,7 +13,7 @@ export const updateHabitDone = async (id, done) => {
   }).then((res) => res.json());
 };
 
-export const addHabit = async (title) => {
+export const createHabit = async (title) => {
   return fetch(`${BASE_URL}/habits`, {
     method: "POST",
     headers: {

@@ -1,9 +1,9 @@
 import "./style.css";
-import { Buttons } from "./ui/Buttons";
+import { AddHabitDialog } from "./ui/AddHabitDialog";
 import { TodayHabits } from "./ui/TodayHabits";
 
-const todayHabits = new TodayHabits();
-const buttons = new Buttons(todayHabits);
+const todayHabits = TodayHabits.getInstance();
+const addHabitDialog = AddHabitDialog.getInstance();
 
 todayHabits.init();
-buttons.init();
+addHabitDialog.init();
